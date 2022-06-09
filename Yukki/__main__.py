@@ -127,8 +127,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_1.join_chat("tirexgugel")
-            await ASS_CLI_1.join_chat("rexaprivateroom")
+            await ASS_CLI_1.join_chat("grzmusik")
+            await ASS_CLI_1.join_chat("tegediskusirasa")
         except:
             pass
         console.print(f"├[red] Assistant 1 Started as {ASSNAME1}!")
@@ -299,7 +299,7 @@ async def start_command(_, message):
                 umention = f"[{sender_name}](tg://user?id={int(sender_id)})"
                 return await LOG_CLIENT.send_message(
                     LOG_GROUP_ID,
-                    f"{message.from_user.mention} has just started bot to check <code>SUDOLIST</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+                    f"{message.from_user.mention} has started bot to check <code>SUDOLIST</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
                 )
         if name == "mhelp":
             text, keyboard = await help_parser(message.from_user.mention)
@@ -343,7 +343,7 @@ async def start_command(_, message):
                             text="🎥 Watch Youtube Video", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="🔃 Close", callback_data="close"
+                            text="🔃 Tutup", callback_data="close"
                         ),
                     ],
                 ]
