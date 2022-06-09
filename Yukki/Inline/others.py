@@ -17,17 +17,17 @@ def others_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="✛ Playlist Mu",
+                text="✛ Playlist Lu",
                 callback_data=f"your_playlist {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="✛ Playlist Group",
+                text="✛ Playlist Grup",
                 callback_data=f"group_playlist {videoid}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⬇️ Download Audio/Video",
+                text="⬇️ Unduh Audio/Video",
                 callback_data=f"audio_video_download {videoid}|{user_id}",
             )
         ],
@@ -49,11 +49,11 @@ def download_markup(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="⬇️ Dapatkan Audio",
+                text="⬇️ Ambil Audio",
                 callback_data=f"gets audio|{videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="⬇️ Dapatkan Video",
+                text="⬇️ Ambil Video",
                 callback_data=f"gets video|{videoid}|{user_id}",
             ),
         ],
