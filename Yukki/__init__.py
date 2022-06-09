@@ -131,11 +131,11 @@ async def initiate_bot():
             await ASS_CLI_5.start()
             random_assistant.append(5)
             console.print("├ [yellow]Booted Assistant Client 5")
-        console.print("└ [green]Assistant Clients Booted Successfully!")
+        console.print("└ [green]Assistant Clients Booted Success!")
         if LOG_SESSION != "None":
             console.print("\n┌ [red]Booting Logger Client")
             await LOG_CLIENT.start()
-            console.print("└ [green]Logger Client Booted Successfully!")
+            console.print("└ [green]Logger Client Booted Success!")
         if "raw_files" not in listdir():
             mkdir("raw_files")
         if "downloads" not in listdir():
