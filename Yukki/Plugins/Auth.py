@@ -33,7 +33,7 @@ async def auth(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "Membalas pesan pengguna atau memberikan username/user_id."
+                "Balas pesan pengguna atau memberikan username/user_id."
             )
             return
         user = message.text.split(None, 1)[1]
@@ -102,7 +102,7 @@ async def whitelist_chat_func(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "Membalas pesan pengguna atau memberikan username/user_id."
+                "Balas pesan pengguna atau memberikan username/user_id."
             )
             return
         user = message.text.split(None, 1)[1]
