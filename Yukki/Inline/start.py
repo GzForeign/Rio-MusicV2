@@ -280,6 +280,6 @@ def dashmarkup():
             InlineKeyboardButton(text="💻 Cpu", callback_data="CPT"),
             InlineKeyboardButton(text="💽 Disk", callback_data="DIT"),
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 Kembali", callback_data="settingm")],
     ]
     return f"⚙️  **{MUSIC_BOT_NAME} Pengaturan**", buttons
