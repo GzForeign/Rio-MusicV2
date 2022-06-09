@@ -115,7 +115,7 @@ async def pm_disapprove(client, message):
 )
 async def block_user_func(client, message):
     if not message.reply_to_message:
-        return await eor(message, text="Reply to a user's message to block.")
+        return await eor(message, text="Reply to user's message to block.")
     user_id = message.reply_to_message.from_user.id
     await eor(message, text="Successfully blocked the user")
     await client.block_user(user_id)
@@ -132,7 +132,7 @@ async def block_user_func(client, message):
 async def unblock_user_func(client, message):
     if not message.reply_to_message:
         return await eor(
-            message, text="Reply to a user's message to unblock."
+            message, text="Reply to user's message to unblock."
         )
     user_id = message.reply_to_message.from_user.id
     await client.unblock_user(user_id)
@@ -168,7 +168,7 @@ async def set_pfp(client, message):
 )
 async def set_bio(client, message):
     if len(message.command) == 1:
-        return await eor(message, text="Berikan beberapa teks untuk ditetapkan sebagai bio..")
+        return await eor(message, text="Beri beberapa teks untuk ditetapkan sebagai bio..")
     elif len(message.command) > 1:
         bio = message.text.split(None, 1)[1]
         try:
@@ -177,7 +177,7 @@ async def set_bio(client, message):
         except Exception as e:
             await eor(message, text=e)
     else:
-        return await eor(message, text="Berikan beberapa teks untuk ditetapkan sebagai bio.")
+        return await eor(message, text="Beri beberapa teks untuk ditetapkan sebagai bio.")
 
 
 async def eor(msg: Message, **kwargs):
