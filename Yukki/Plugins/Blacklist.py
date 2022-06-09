@@ -36,7 +36,7 @@ async def whitelist_chat_func(_, message: Message):
         return await message.reply_text(
             "Obrolan telah berhasil masuk daftar putih"
         )
-    await message.reply_text("Terjadi kesalahan, periksa log.")
+    await message.reply_text("Ada kesalahan, periksa log.")
 
 
 @app.on_message(filters.command("blacklistedchat"))
@@ -51,6 +51,6 @@ async def blacklisted_chats_func(_, message: Message):
         j = 1
         text += f"**{count}. {title}** [`{chat_id}`]\n"
     if j == 0:
-        await message.reply_text("Tidak Ada Obrolan Daftar Hitam")
+        await message.reply_text("Gada Obrolan Daftar Hitam")
     else:
         await message.reply_text(text)
