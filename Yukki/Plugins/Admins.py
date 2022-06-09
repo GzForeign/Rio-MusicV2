@@ -223,7 +223,7 @@ async def admins(_, message: Message):
                         photo=thumb,
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"<b>__Obrolan Suara dilewati__</b>\n\n🎥<b>__Memulai Pemutaran Video:__ </b> [{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n👤**__Diminta oleh:__** {mention}"
+                            f"<b>__Obrolan Suara dilewati__</b>\n\n🎥<b>__Memulai Memutar Video:__ </b> [{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n👤**__Diminta oleh:__** {mention}"
                         ),
                     )
                     await mystic.delete()
@@ -269,7 +269,7 @@ async def admins(_, message: Message):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>__Obrolan Suara Dilewati__</b>\n\n🎥<b>__Mulai Bermain:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Durasi:__</b> {duration_min} Mins\n👤**__Diminta oleh:__** {mention}"
+                        f"<b>__Obrolan Suara Dilewati__</b>\n\n🎥<b>__Mulai Memutar:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Durasi:__</b> {duration_min} Mins\n👤**__Diminta oleh:__** {mention}"
                     ),
                 )
                 os.remove(thumb)
